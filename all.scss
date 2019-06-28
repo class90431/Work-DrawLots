@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Noto Serif TC', serif;
+}
+#app{
+  height: 100vh;
+}
+.wrap {
+  height: 100%;
+}
+.main {
+  height: calc(100vh - 128px);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1)), url(../images/frank-mckenna-P-XX-PHSgyw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0 30px;
+}
+.container-page1 {
+  height: 100%;
+  // height: calc(100vh - 128px);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.title {
+  color: white;
+  writing-mode: vertical-lr;
+  font-size: 120px;
+  font-weight: 900;
+}
+.info {
+  color: white;
+  align-self: flex-end;
+  margin-bottom: 40px;
+}
+.list-unstyle {
+  list-style: none;
+}
+.category {
+  .select-list {
+    display: flex;
+    width: 368px;
+    height: 96px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    user-select: none;
+  }
+
+  label {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    width: 112px;
+    height: 40px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.4s;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.35);
+    }
+  }
+
+  .radio-btn {
+    display: none;
+    &:checked + label {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+.step {
+  margin-bottom: 40px;
+}
+.title-step {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+.category-title {
+  @extend .title-step
+}
+
+.container-btn-start {
+  display: flex;
+}
+.btn-start-div{
+  margin-top: 3%;
+  margin-left: 20%;
+}
+.btn-start {
+  border: 1px solid black;
+  padding: 10px 127px;
+  font-size: 24px;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 900;
+}
+.active-style {
+  color: yellow
+}
+// container-page2
+.height-transtition {
+  height: 100%;
+  transition:  5s;
+  padding: 20px;
+}
+.container-page2 {
+  height: 100%;
+  position: relative;
+}
+.page2-inDiv {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-transtition {
+  opacity: 1;
+  transition: opacity 5s;
+}
+.border-text {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 36px;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 900;
+}
+.border-text-position-lt{
+  top: 0;
+  left: 0;
+}
+.border-text-position-rt{
+  top: 0;
+  right: 0;
+}
+.border-text-position-lb{
+  bottom: 0;
+  left: 0;
+}
+.border-text-position-rb{
+  right: 0;
+  bottom: 0;
+}
+.line-top {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: calc(100% - 130px);
+  height: 1px;
+  position: absolute;
+  left: 60px;
+  top: 30px;
+}
+.line-bottom {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: calc(100% - 130px);
+  height: 1px;
+  position: absolute; 
+  bottom: 20px;
+  left: 60px;
+}
+.line-left {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 1px;
+  height: calc(100% - 130px);
+  position: absolute; 
+  left: 20px;
+  top: 60px;
+}
+.line-right {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 1px;
+  height: calc(100% - 130px);
+  position: absolute; 
+  right: 20px;
+  top: 60px;
+}
+.result {
+  color: #fff;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.fortune {
+  font-size: 240px;
+  font-weight: 700;
+}
+.fortune-num {
+  align-self: center;
+  letter-spacing: 30px;
+  font-size: 24px;
+  padding-left: 40px;
+}
+.fortune-text {
+  @extend .fortune-num
+} 
+.container-page3 {
+  height: 100%;
+  position: relative;
+}
+.sign-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.content-left {
+  color: #fff;
+  align-self: center;
+  .content-left-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .content-left-small-text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+.contetn-right {
+  color: #fff;
+  writing-mode: vertical-lr;
+  font-size: 40px;
+  padding-top: 50px;
+  .content-right-small-text {
+    font-size: 16px;
+  }
+}
+.poem {
+  line-height: 2;
+}
+.btn-restart {
+  color: #fff;
+  border: 1px solid white;
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0);
+  &:hover {
+    @extend .active-style
+  }
+}
