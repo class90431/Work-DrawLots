@@ -45,8 +45,11 @@ body {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  font-size: 120px;
+  font-size: 80px;
   font-weight: 900;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .info {
